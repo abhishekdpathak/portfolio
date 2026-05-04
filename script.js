@@ -106,3 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+document.querySelectorAll(".radial").forEach((radial) => {
+  const level = radial.getAttribute("data-level");
+  radial.style.setProperty("--level", `${level}%`);
+});
