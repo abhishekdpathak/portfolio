@@ -2438,7 +2438,12 @@ footer {
   max-width: 20rem;
   margin: 0 auto;
 }
-
+#about .photo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
 #about .stats {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
