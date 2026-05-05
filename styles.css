@@ -2500,3 +2500,8 @@ footer {
   text-decoration: none;
   font-size: 14px;
 }
+@media (max-width: 768px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
