@@ -2411,3 +2411,17 @@ footer {
     height: 58px;
   }
 }
+/* ===== Stats Section Fix ===== */
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  min-width: 200px;
+  text-align: center;
+}
