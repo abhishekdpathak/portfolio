@@ -2425,20 +2425,40 @@ footer {
   min-width: 200px;
   text-align: center;
 }
-/* Final About alignment fix */
+/* Final About / Impact alignment fix */
 #about .about-content {
-  display: grid !important;
-  grid-template-columns: 1.15fr 0.85fr !important;
-  gap: 3rem !important;
-  align-items: start !important;
-}
-
-#about .about-photo {
-  align-self: start !important;
-  margin-top: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2rem !important;
 }
 
 #about .stats,
 #about .about-stats {
-  margin-top: 1.5rem !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(220px, 1fr)) !important;
+  gap: 1.5rem !important;
+  margin: 0 auto 2rem !important;
+  width: 100% !important;
+  max-width: 720px !important;
+}
+
+#about .highlight-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 1.5rem !important;
+  margin-top: 0 !important;
+}
+
+@media (max-width: 1024px) {
+  #about .highlight-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  #about .stats,
+  #about .about-stats,
+  #about .highlight-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
