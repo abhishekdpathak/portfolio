@@ -2428,12 +2428,13 @@ footer {
 #about .about-photo {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: -40px;
 }
 
 #about .photo-wrapper {
   width: 20rem;
-  height: 20rem;
+  height: 22rem;
   max-width: 20rem;
   margin: 0 auto;
 }
